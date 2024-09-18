@@ -1,5 +1,8 @@
 package com.dev.backendbook.user;
 
+import com.dev.backendbook.book.Book;
+import com.dev.backendbook.feedback.Feedback;
+import com.dev.backendbook.history.BookTransactionHistory;
 import com.dev.backendbook.role.Role;
 import jakarta.persistence.*;
 import lombok.*;
@@ -46,9 +49,14 @@ public class User implements UserDetails, Principal{
     @Column(insertable = false)
     private LocalDateTime lastModifiedDate;
 
+    // relations
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Role> roles;
 
+    @OneToMany(mappedBy = "owner")
+    private List<Book> books;
+    @OneToMany(mappedBy = "user")
+    private List<BookTransactionHistory> histories;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

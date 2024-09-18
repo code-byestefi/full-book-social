@@ -1,5 +1,6 @@
 package com.dev.backendbook.book;
 
+import com.dev.backendbook.file.FileUtils;
 import com.dev.backendbook.history.BookTransactionHistory;
 import org.springframework.stereotype.Service;
 
@@ -34,7 +35,7 @@ public class BookMapper {
                 .archived(book.isArchived())
                 .shareable(book.isShareable())
                 .owner(book.getOwner().fullName())
-                // .cover()
+                .cover(FileUtils.readFileFromLocation(book.getBookCover()))
                 .build();
     }
 

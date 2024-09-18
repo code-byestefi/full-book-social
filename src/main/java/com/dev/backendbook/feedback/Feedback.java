@@ -1,7 +1,7 @@
 package com.dev.backendbook.feedback;
 
 import com.dev.backendbook.book.Book;
-import common.BaseEntity;
+import com.dev.backendbook.common.BaseEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

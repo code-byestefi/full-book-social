@@ -3,7 +3,7 @@ package com.dev.backendbook.book;
 import com.dev.backendbook.feedback.Feedback;
 import com.dev.backendbook.history.BookTransactionHistory;
 import com.dev.backendbook.user.User;
-import common.BaseEntity;
+import com.dev.backendbook.common.BaseEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package common;
+package com.dev.backendbook.common;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

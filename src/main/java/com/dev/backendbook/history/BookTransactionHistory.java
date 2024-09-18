@@ -2,7 +2,7 @@ package com.dev.backendbook.history;
 
 import com.dev.backendbook.book.Book;
 import com.dev.backendbook.user.User;
-import common.BaseEntity;
+import com.dev.backendbook.common.BaseEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;

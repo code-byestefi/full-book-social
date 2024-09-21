@@ -7,6 +7,11 @@ import { MenuComponent } from './components/menu/menu.component';
 import { BookListComponent } from './pages/book-list/book-list.component';
 import {FormsModule} from "@angular/forms";
 import { BookCardComponent } from './components/book-card/book-card.component';
+import { RatingComponent } from './components/rating/rating.component';
+import { MyBooksComponent } from './pages/my-books/my-books.component';
+import { ManageComponent } from './pages/manage/manage.component';
+import { BorrowedBookListComponent } from './pages/borrowed-book-list/borrowed-book-list.component';
+import { MyReturnedBooksComponent } from './pages/my-returned-books/my-returned-books.component';
 
 
 @NgModule({
@@ -14,7 +19,12 @@ import { BookCardComponent } from './components/book-card/book-card.component';
     MainComponent,
     MenuComponent,
     BookListComponent,
-    BookCardComponent
+    BookCardComponent,
+    RatingComponent,
+    MyBooksComponent,
+    ManageComponent,
+    BorrowedBookListComponent,
+    MyReturnedBooksComponent
   ],
   imports: [
     CommonModule,
